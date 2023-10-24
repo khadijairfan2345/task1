@@ -12,7 +12,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install Python and required dependencies
-                echo hello
+                sh 'pip install pytest'
             }
         }
 
