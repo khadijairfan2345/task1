@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install Python and required dependencies
-                sh 'bash pip install pytest'
+                sh 'pip install pytest'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Run your test cases using pytest
-                sh 'bash python square_test.py'
+                sh 'python square_test.py'
             }
         }
     }
