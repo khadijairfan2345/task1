@@ -12,7 +12,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install Python and required dependencies
-                sh 'pip install pytest'  // If you have a requirements file
+                secho hello
             }
         }
 
